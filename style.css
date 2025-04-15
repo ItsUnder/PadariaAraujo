@@ -6,6 +6,7 @@ body {
 margin: 0vh;
 background-color: bisque;
 font-family: 'Courier New', Courier, monospace;
+transition: background-color 0.5s ease, color 0.5s ease;
 }
 .content {
     display: none;
@@ -121,6 +122,19 @@ justify-content: center;
     text-decoration: none;
     height: 1vh;
     border-radius: 0.2vh;
+    font-weight: 200;
+}
+.headerOptions:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.74);
+    line-height: 2vh;
+    padding: 1vh 4vh 2vh;
+    font-size: 2.2vh;
+    font-weight: 400;
+    text-decoration: none;
+    height: 1vh;
+    border-radius: 0.2vh;
+    font-weight: 600;
 }
 .buttonTheme {
     border: 0.1vh solid #151516;
@@ -142,8 +156,16 @@ justify-content: center;
     position: absolute;
     text-align: end;
 }
+.buttonTheme:hover {
+    background: rgb(49, 49, 49);
+}
+.buttonTheme:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 0 #111111;
+}
 .buttonPosition {
     text-align: justify;
+    margin-left: 2vh;
 }
 .titleSection {
     font-stretch:extra-expanded;
@@ -279,6 +301,7 @@ justify-content: center;
 .errorIcon {
     width: 60vh;
     text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 .errorIconContainer {
     text-align: center;
@@ -288,6 +311,7 @@ justify-content: center;
     margin-right: 20vh;
     margin-top: 10vh;
     border-radius: 2vh;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 .dark .errorIconContainer {
     text-align: center;
@@ -317,4 +341,11 @@ justify-content: center;
     font-family: 'Calibri Light';
     font-weight: 400;
     margin-bottom: 0vh;
+}
+.button:hover {
+    background: rgb(49, 49, 49);
+}
+.button:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 0 #111111;
 }

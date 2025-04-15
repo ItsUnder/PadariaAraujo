@@ -1,5 +1,17 @@
 let darkMode = localStorage.getItem("dark-mode");
-console.log("hello");
+
+window.addEventListener('scroll', function () {
+  const header = document.getElementById("headerContent");
+  const homeButton = document.getElementById("homeButton");
+  const stickyClass = 'stickyHeader';
+  if (window.scrollY > 100) {
+    header.classList.add(stickyClass);
+    homeButton.style.display = "block";
+  } else {
+    header.classList.remove(stickyClass);
+    homeButton.style.display = "none";
+  }
+});
 
 window.onload = function themeChecker() {
   if (darkMode === "enabled") {

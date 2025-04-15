@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 6vh ;
 }
 
 body {
@@ -112,6 +113,15 @@ display: flex;
 gap: 7vh;
 justify-content: center;
 }
+.stickyHeader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0); /* or any background to contrast */
+    z-index: 999;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
 .headerOptions {
     color: white;
     background-color: rgba(0, 0, 0, 0.74);
